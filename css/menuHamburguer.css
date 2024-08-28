@@ -1,0 +1,36 @@
+nav ul li {
+    margin: 0 10px;
+    position: relative;
+}
+
+.menu-hamburger {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+.menu-hamburger .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: white;
+}
+
+@media (max-width: 600px){
+    nav ul {
+        flex-direction: column;
+        display: none;
+        
+    }
+    .menu-hamburger {
+        display: block;
+    }
+
+    nav.menu-active {
+        display: flex;
+    }
+
+}
