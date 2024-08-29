@@ -26,8 +26,7 @@ header{
 nav{
     display: inline-block;
 
-    width: 30vw;
-    height: 50vh;
+    width: 30vw; height: 50vh;
 
     text-align: center;
 }
@@ -61,11 +60,10 @@ body{
 
 .proj{
     display: grid;
-    padding: auto;
-
-    justify-items: center;
-
-    padding: 100px  0  100px  0;
+    grid-template-columns:repeat(auto-fill, minmax(400px, 0));
+    place-content: center;
+    grid-column-gap: 110px; 
+    grid-row-gap: 70px;   
 }
 
 .proj h2{
@@ -81,7 +79,6 @@ body{
 
 }
 
-
 .proj #butt{
     text-decoration: none;
     color: black;
@@ -96,15 +93,18 @@ body{
 }
 
 section h1  {
+    display: block;
     text-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     font-size: 5em;
+
+    padding: 10%;
 }
+
 #box{
+    position: relative;
     background-color: rgba(112, 112, 112, 0.767);
-   
     
-    width: 400px;
-    height: 650px;
+    width: 350px; height: 600px;
     border-radius: 10px;
 
     text-align: center;
@@ -113,15 +113,9 @@ section h1  {
 }
 
 #box img{
-    width: 100%;
-    height: 40%;
+    width: 100%; height: 40%;
     border-radius: 2%;
 }
-
-
-
-
-
 
 footer {
     text-align: center;
@@ -141,10 +135,15 @@ footer {
     .flex1{
         flex: 1;
     }
-
-
 }
 
 @media (max-width: 600px){
+    .proj{
+        display: grid;
+        grid-template-columns:repeat(auto-fill, minmax(300px, 0));
+        place-content: center;
+        grid-column-gap: 0px; 
+        grid-row-gap: 70px;   
+    }
 
 }
