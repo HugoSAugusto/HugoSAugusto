@@ -140,10 +140,8 @@ footer {
 @media (max-width: 600px){
     .proj{
         display: grid;
-        grid-template-columns:repeat(auto-fill, minmax(300px, 0));
-        place-content: center;
-        grid-column-gap: 0px; 
-        grid-row-gap: 70px;   
+        grid-template-columns:repeat(auto-fill, minmax(350px, 0));
+  
     }
 
 }
